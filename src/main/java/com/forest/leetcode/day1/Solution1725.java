@@ -38,6 +38,13 @@ public class Solution1725 {
         return result;
     }
 
+    /**
+     * 排序
+     *
+     * @param arr
+     * @author Forest Dong
+     * @date 2024/01/21 16:41
+     */
     private static void sort(int[] arr) {
         for (int i = 0; i < arr.length; i++) {
             for (int j = i + 1; j < arr.length; j++) {
