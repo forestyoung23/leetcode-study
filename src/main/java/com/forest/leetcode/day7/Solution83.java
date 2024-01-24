@@ -11,7 +11,7 @@ package com.forest.leetcode.day7;
 public class Solution83 {
     /**
      * 思路：使用递归实现
-     * 1.若当前节点值等于下一节点值，则设置当前节点的下一节点为下下个节点
+     * 若当前节点值等于下一节点值，则设置当前节点的下一节点为下下个节点
      *
      * @param head
      * @return {@link ListNode }
@@ -32,6 +32,7 @@ public class Solution83 {
                 node.next = null;
             } else {
                 node.next = node.next.next;
+                // 这里需要继续递，防止连续多个重复元素
                 delete(node);
             }
         }
