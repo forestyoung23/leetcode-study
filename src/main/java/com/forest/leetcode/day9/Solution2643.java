@@ -10,6 +10,15 @@ package com.forest.leetcode.day9;
  */
 public class Solution2643 {
 
+    /**
+     * 思路
+     * 循环遍历比较即可
+     *
+     * @param mat
+     * @return {@link int[] }
+     * @author Forest Dong
+     * @date 2024/01/25 19:07
+     */
     public static int[] rowAndMaximumOnes(int[][] mat) {
         int max = 0;
         int[] result = new int[2];
