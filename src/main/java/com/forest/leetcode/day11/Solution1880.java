@@ -7,6 +7,7 @@ import java.util.Map;
  * 难度：简单
  *
  * @author Forest Dong
+ * @link https://leetcode.cn/problems/check-if-word-equals-summation-of-two-words/description/
  * @date 2024年01月30日 16:56
  */
 public class Solution1880 {
