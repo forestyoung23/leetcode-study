@@ -12,27 +12,37 @@ import java.util.List;
  * @date 2024年01月31日 17:31
  */
 public class Solution682 {
+    /**
+     * 使用list模拟栈
+     *
+     * @param operations
+     * @return int
+     * @author Forest Dong
+     * @date 2024/02/01 19:09
+     */
     public static int calPoints(String[] operations) {
-        List<Integer> numList = new ArrayList<>();
+        List<Integer> points = new ArrayList<>();
+        int sum = 0;
         for (String operation : operations) {
             switch (operation) {
                 case "C":
-                    numList.remove(numList.size() - 1);
+                    sum -= points.get(points.size() - 1);
+                    points.remove(points.size() - 1);
                     break;
                 case "D":
-                    numList.add()
+                    sum += points.get(points.size() - 1) * 2;
+                    points.add(points.get(points.size() - 1) * 2);
+                    break;
+                case "+":
+                    sum += points.get(points.size() - 1) + points.get(points.size() - 2);
+                    points.add(points.get(points.size() - 1) + points.get(points.size() - 2));
+                    break;
+                default:
+                    sum += Integer.parseInt(operation);
+                    points.add(Integer.parseInt(operation));
             }
         }
-    }
-
-
-    private static int findNum(int index, int pre, String[] operations) {
-        for (int i = index - 1; i >= 0 ; i--) {
-            if (!"C".equals(operations[i]) && !"D".equals(operations[i]) && !"+".equals(operations[i])) {
-                return Integer.parseInt(operations[i - pre]);
-            }
-        }
-        return 0;
+        return sum;
     }
 
     public static void main(String[] args) {
