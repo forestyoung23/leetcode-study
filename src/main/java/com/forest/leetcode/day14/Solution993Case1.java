@@ -13,6 +13,8 @@ import java.util.Queue;
  */
 public class Solution993Case1 {
     /**
+     * 使用广度优先搜索遍历二叉树，分别记录x、y的深度和父节点
+     *
      * @param root
      * @param x
      * @param y
