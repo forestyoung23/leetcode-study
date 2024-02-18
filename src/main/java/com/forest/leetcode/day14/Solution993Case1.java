@@ -8,7 +8,7 @@ import java.util.Queue;
  * 难度：简单
  *
  * @author Forest Dong
- * @link https://leetcode.cn/problems/baseball-game/description/
+ * @link https://leetcode.cn/problems/cousins-in-binary-tree/description/
  * @date 2024年02月01日 20:14
  */
 public class Solution993Case1 {
