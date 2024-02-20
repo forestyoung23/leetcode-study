@@ -15,6 +15,6 @@ public class KthLargest {
     }
 
     public int add(int val) {
-
+        return 1;
     }
 }
