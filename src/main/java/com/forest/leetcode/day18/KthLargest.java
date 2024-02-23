@@ -26,6 +26,19 @@ public class KthLargest {
         }
     }
 
+
+    /**
+     * 思路：使用优先队列实现（小顶堆）实现
+     * 1.若队列元素数量小于k,则将元素如列。
+     * 2.若队列元素数量大于等于k,比较队首元素和待入队元素大小
+     * 2.1若队首元素小，则出队，将新元素入队
+     * 2.2若队首元素大，则不处理，保持不变
+     *
+     * @param val
+     * @return int
+     * @author Forest Dong
+     * @date 2024/02/23 11:14
+     */
     public int add(int val) {
         if (queue.size() < k) {
             queue.offer(val);
