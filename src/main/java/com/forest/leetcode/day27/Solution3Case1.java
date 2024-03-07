@@ -12,6 +12,14 @@ import java.util.List;
  * @date 2024年03月07日 20:19
  */
 public class Solution3Case1 {
+    /**
+     * 暴力破解法（双重 for 循环）
+     *
+     * @param s
+     * @return int
+     * @author Forest Dong
+     * @date 2024/03/07 21:06
+     */
     public static int lengthOfLongestSubstring(String s) {
         char[] chars = s.toCharArray();
         if (1 == chars.length) {
