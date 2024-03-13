@@ -31,16 +31,13 @@ public class Solution3Case1 {
             result.add(chars[i]);
             for (int j = i + 1; j < chars.length; j++) {
                 if (result.contains(chars[j])) {
-                    if (max < result.size()) {
-                        max = result.size();
-                    }
                     break;
                 } else {
                     result.add(chars[j]);
-                    if (max < result.size()) {
-                        max = result.size();
-                    }
                 }
+            }
+            if (max < result.size()) {
+                max = result.size();
             }
         }
         return max;
