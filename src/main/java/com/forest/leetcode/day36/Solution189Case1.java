@@ -10,18 +10,24 @@ package com.forest.leetcode.day36;
  */
 public class Solution189Case1 {
     /**
-     * 该方案适用于：k < nums.length
+     * 若 k == nums.length 则轮转一轮后结果依然是原数组
+     * 因此，只需要轮转 (k % nums.length) 个位置即可.
+     *
      * @param nums
      * @param k
      */
     public static void rotate(int[] nums, int k) {
-        int[] temp = new int[k];
-        int length = nums.length;
-        for (int i = 0; i < k; i++) {
-            temp[i] = nums[length - k + i];
+        int count = k % nums.length;
+        if (0 == count) {
+            return;
         }
-        for (int i = length - k - 1; i >= 0; i--) {
-            nums[i + k] = nums[i];
+        int[] temp = new int[count];
+        int length = nums.length;
+        for (int i = 0; i < count; i++) {
+            temp[i] = nums[length - count + i];
+        }
+        for (int i = length - count - 1; i >= 0; i--) {
+            nums[i + count] = nums[i];
         }
         for (int i = 0; i < temp.length; i++) {
             nums[i] = temp[i];
