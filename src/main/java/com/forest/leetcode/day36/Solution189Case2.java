@@ -1,5 +1,8 @@
 package com.forest.leetcode.day36;
 
+import java.lang.reflect.Array;
+import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.LinkedList;
 import java.util.List;
 
@@ -19,8 +22,23 @@ public class Solution189Case2 {
      * @param k
      */
     public static void rotate(int[] nums, int k) {
-        int count = nums.length % k;
-        List<Integer> list = new LinkedList<>();
+        int count = k % nums.length;
+        int length = nums.length;
+        List<Integer> list = new ArrayList<>();
+        for (int i = 0; i < count; i++) {
+            list.add(nums[length -count + i]);
+        }
+        for (int i = 0; i < length - count; i++) {
+            list.add(nums[i]);
+        }
+        for (int i = 0; i < list.size(); i++) {
+            nums[i] = list.get(i);
+        }
     }
 
+    public static void main(String[] args) {
+        int[] nums = {1, 2, 3, 4, 5, 6, 7};
+        rotate(nums, 3);
+        System.err.println(1);
+    }
 }
