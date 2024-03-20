@@ -2,33 +2,25 @@ package com.forest.leetcode.day31;
 
 import com.forest.leetcode.day7.ListNode;
 
-import java.util.ArrayList;
-import java.util.List;
-
 /**
  * 力扣题目序号：206.反转链表
  * 难度：简单
  *
  * @author Forest Dong
  * @link https://leetcode.cn/problems/reverse-linked-list/description/?envType=study-plan-v2&envId=top-100-liked
- * @date 2024年03月11日 19:50
+ * @date 2024年03月20日 19:56
  */
-public class Solution206 {
-    public static ListNode reverseList(ListNode head) {
-        if (null == head || null == head.next) {
-            return head;
+public class Solution206Case2 {
+    private static ListNode reverseList(ListNode head) {
+        ListNode prev = null;
+        ListNode curr = head;
+        while (curr != null) {
+            ListNode next = curr.next;
+            curr.next = prev;
+            prev = curr;
+            curr = next;
         }
-        List<ListNode> nodes = new ArrayList<>();
-        ListNode temp = head;
-        while (temp != null) {
-            ListNode listNode = new ListNode(temp.val);
-            nodes.add(listNode);
-            temp = temp.next;
-        }
-        for (int i = nodes.size() - 1; i > 0; i--) {
-            nodes.get(i).next = nodes.get(i - 1);
-        }
-        return nodes.get(nodes.size() - 1);
+        return prev;
     }
 
     public static void main(String[] args) {
