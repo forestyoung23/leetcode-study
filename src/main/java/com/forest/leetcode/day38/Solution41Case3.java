@@ -1,8 +1,5 @@
 package com.forest.leetcode.day38;
 
-import java.util.HashMap;
-import java.util.Map;
-
 /**
  * 力扣题目序号：41.缺失的第一个正数
  * 难度：困难
