@@ -1,6 +1,6 @@
 package com.forest.leetcode.day43;
 
-import com.forest.leetcode.day7.ListNode;
+import com.forest.leetcode.common.ListNode;
 
 /**
  * 力扣题目序号：142.环形链表 II

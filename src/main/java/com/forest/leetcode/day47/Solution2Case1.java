@@ -1,6 +1,6 @@
 package com.forest.leetcode.day47;
 
-import com.forest.leetcode.day7.ListNode;
+import com.forest.leetcode.common.ListNode;
 
 /**
  * 力扣题目序号：2.两数相加

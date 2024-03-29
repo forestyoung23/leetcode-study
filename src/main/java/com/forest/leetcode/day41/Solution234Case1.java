@@ -1,6 +1,6 @@
 package com.forest.leetcode.day41;
 
-import com.forest.leetcode.day7.ListNode;
+import com.forest.leetcode.common.ListNode;
 
 import java.util.ArrayList;
 import java.util.List;

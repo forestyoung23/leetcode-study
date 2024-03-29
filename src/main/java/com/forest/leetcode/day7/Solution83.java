@@ -1,5 +1,7 @@
 package com.forest.leetcode.day7;
 
+import com.forest.leetcode.common.ListNode;
+
 /**
  * 力扣题目序号：83.删除排序链表中的重复元素
  * 难度：简单

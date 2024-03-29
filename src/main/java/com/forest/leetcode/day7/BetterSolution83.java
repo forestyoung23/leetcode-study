@@ -1,5 +1,7 @@
 package com.forest.leetcode.day7;
 
+import com.forest.leetcode.common.ListNode;
+
 /**
  * @author Forest Dong
  * @date 2024年01月24日 19:59

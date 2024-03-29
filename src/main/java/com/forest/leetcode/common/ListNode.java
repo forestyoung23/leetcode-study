@@ -1,4 +1,4 @@
-package com.forest.leetcode.day7;
+package com.forest.leetcode.common;
 
 /**
  * @author Forest Dong
@@ -15,6 +15,7 @@ public class ListNode {
     public ListNode(int val) {
         this.val = val;
     }
+
     public ListNode(int val, ListNode next) {
         this.val = val;
         this.next = next;
