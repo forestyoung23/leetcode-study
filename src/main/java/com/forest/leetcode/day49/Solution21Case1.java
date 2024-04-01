@@ -10,7 +10,7 @@ import com.forest.leetcode.common.ListNode;
  * @link https://leetcode.cn/problems/merge-two-sorted-lists/description/?envType=study-plan-v2&envId=top-100-liked
  * @date 2024年03月31日 10:49
  */
-public class Solution49Case1 {
+public class Solution21Case1 {
     public static ListNode mergeTwoLists(ListNode list1, ListNode list2) {
         ListNode prehead = new ListNode(-1);
 
