@@ -9,7 +9,7 @@ import java.util.Queue;
 
 /**
  * 力扣题目序号：102.二叉树的层序遍历
- * 难度：简单
+ * 难度：中等
  *
  * @author Forest Dong
  * @link https://leetcode.cn/problems/binary-tree-level-order-traversal/description/?envType=study-plan-v2&envId=top-100-liked
