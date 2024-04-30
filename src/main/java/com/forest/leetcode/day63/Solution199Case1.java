@@ -42,7 +42,7 @@ public class Solution199Case1 {
             }
         }
 
-        List<Integer> rightView = new ArrayList<Integer>();
+        List<Integer> rightView = new ArrayList<>();
         for (int depth = 0; depth <= max_depth; depth++) {
             rightView.add(rightmostValueAtDepth.get(depth));
         }
