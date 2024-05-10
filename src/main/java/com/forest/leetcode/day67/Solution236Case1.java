@@ -12,7 +12,6 @@ import com.forest.leetcode.common.TreeNode;
  */
 public class Solution236Case1 {
 
-
     private TreeNode ans;
 
     private boolean dfs(TreeNode root, TreeNode p, TreeNode q) {
