@@ -1,7 +1,5 @@
 package com.forest.leetcode.day70;
 
-import java.util.ArrayDeque;
-import java.util.Deque;
 import java.util.List;
 import java.util.Stack;
 
@@ -35,7 +33,7 @@ public class Solution20Case1 {
             }
             if (rightList.contains(aChar)) {
                 Character peek = stack.peek();
-                if (('(' == peek && ')' == aChar) || ('[' == peek && ']' == aChar)  || ('{' == peek && '}' == aChar) ) {
+                if (('(' == peek && ')' == aChar) || ('[' == peek && ']' == aChar) || ('{' == peek && '}' == aChar)) {
                     stack.pop();
                 } else {
                     return false;

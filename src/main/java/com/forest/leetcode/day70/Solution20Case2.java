@@ -1,6 +1,6 @@
 package com.forest.leetcode.day70;
 
-import java.util.*;
+import java.util.Stack;
 
 /**
  * 力扣题目序号：20.有效的括号
@@ -15,12 +15,12 @@ public class Solution20Case2 {
         char[] chs = s.toCharArray();
         Stack<Character> stack = new Stack<>();
         for (char ch : chs) {
-            if (ch == '(' || ch == '[' || ch == '{'){
+            if (ch == '(' || ch == '[' || ch == '{') {
                 stack.push(ch);
-            }else{
-                if (stack.isEmpty())    return false;
+            } else {
+                if (stack.isEmpty()) return false;
                 Character target = stack.pop();
-                if ((ch == ')' && target != '(') || (ch == ']' && target != '[') || (ch == '}' && target != '{')){
+                if ((ch == ')' && target != '(') || (ch == ']' && target != '[') || (ch == '}' && target != '{')) {
                     return false;
                 }
             }
