@@ -5,7 +5,7 @@ import java.util.LinkedList;
 
 /**
  * 力扣题目序号：155.最小栈
- * 难度：简单
+ * 难度：中等
  *
  * @author Forest Dong
  * @link https://leetcode.cn/problems/min-stack/description/?envType=study-plan-v2&envId=top-100-liked
