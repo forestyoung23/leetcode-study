@@ -2,7 +2,6 @@ package com.forest.leetcode.day72;
 
 import java.util.Collections;
 import java.util.LinkedList;
-import java.util.List;
 
 /**
  * 力扣题目序号：394.字符串解码
