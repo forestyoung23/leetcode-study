@@ -1,8 +1,5 @@
 package com.forest.leetcode.day73;
 
-import java.util.HashMap;
-import java.util.Map;
-
 /**
  * 力扣题目序号：136.只出现一次的数字
  * 难度：简单
