@@ -10,7 +10,7 @@ package com.forest.leetcode.day75;
  */
 public class Solution70Case1 {
     public static int climbStairs(int n) {
-        int p = 0, q = 0, r = 1;
+        int p, q = 0, r = 1;
         for (int i = 1; i <= n; ++i) {
             p = q;
             q = r;
