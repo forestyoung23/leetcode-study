@@ -16,11 +16,11 @@ public class Solution118Case1 {
         List<List<Integer>> result = new ArrayList<>();
         for (int i = 0; i < numRows; i++) {
             List<Integer> list = new ArrayList<>();
-            for (int j = 0; j < i + 1; j++) {
-                if (j > 0 && j < i) {
-                    list.add(result.get(i - 1).get(j - 1) + result.get(i - 1).get(j));
-                } else {
+            for (int j = 0; j <= i; j++) {
+                if (j == 0 || j == i) {
                     list.add(1);
+                } else {
+                    list.add(result.get(i - 1).get(j - 1) + result.get(i - 1).get(j));
                 }
             }
             result.add(list);
@@ -28,9 +28,7 @@ public class Solution118Case1 {
         return result;
     }
 
-
     public static void main(String[] args) {
         System.err.println(generate(5));
     }
-
 }
