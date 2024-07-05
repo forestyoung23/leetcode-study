@@ -5,7 +5,7 @@ import java.util.List;
 
 /**
  * 力扣题目序号：46.全排列
- * 难度：简单
+ * 难度：中等
  *
  * @author Forest Dong
  * @link https://leetcode.cn/problems/permutations/description/?envType=study-plan-v2&envId=top-100-liked
