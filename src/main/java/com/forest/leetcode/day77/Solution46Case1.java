@@ -11,7 +11,7 @@ import java.util.List;
  * @link https://leetcode.cn/problems/permutations/description/?envType=study-plan-v2&envId=top-100-liked
  * @date 2024年07月04日 10:43
  */
-public record Solution46Case1() {
+public class Solution46Case1 {
     public static List<List<Integer>> permute(int[] nums) {
         List<List<Integer>> res = new ArrayList<>();
         backtrack(new ArrayList<>(), nums, new boolean[nums.length], res);
